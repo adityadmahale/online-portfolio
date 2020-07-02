@@ -24,6 +24,7 @@ code {
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
+  border-radius: 0 !important;
   background-image: linear-gradient(
       to right,
       rgba(0, 0, 0, 0.8),
@@ -42,9 +43,21 @@ code {
   color: white;
 }
 
+.navbar {
+  left: 0;
+  right: 0;
+  position: fixed;
+  background-color: #6e6d6d;
+  font-size: 20px;
+}
+
 @media screen and (min-width: 768px) {
   .hero-text {
     left: 35%;
     text-align: left;
+  }
+
+  .navbar {
+    background-color: transparent;
   }
 }
