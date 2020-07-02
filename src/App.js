@@ -1,6 +1,6 @@
 import React from "react";
-import HeroImage from "./components/heroImage";
-import NavBar from "./components/navBar";
+import Header from "./components/header";
+import Footer from "./components/footer";
 import { BrowserRouter } from "react-router-dom";
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
@@ -10,8 +10,8 @@ import "bootstrap/dist/js/bootstrap.min.js";
 function App() {
   return (
     <BrowserRouter>
-      <NavBar />
-      <HeroImage />
+      <Header />
+      <Footer />
     </BrowserRouter>
   );
 }
