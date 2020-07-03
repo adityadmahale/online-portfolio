@@ -2,7 +2,7 @@ import React from "react";
 import { NavLink } from "react-router-dom";
 
 const NavBar = () => {
-  const links = ["About", "Project", "Skills", "Contact"];
+  const links = ["About", "Projects", "Skills", "Contact"];
 
   return (
     <nav className="navbar navbar-expand-lg fixed-top navbar-dark">
