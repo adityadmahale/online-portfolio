@@ -87,6 +87,7 @@ a.gold-text:hover {
 
   .navbar {
     background-color: transparent;
+    transition: background-color 1s;
   }
 
   .silver {
