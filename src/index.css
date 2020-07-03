@@ -88,4 +88,8 @@ a.gold-text:hover {
   .navbar {
     background-color: transparent;
   }
+
+  .silver {
+    background-color: #6e6d6d;
+  }
 }

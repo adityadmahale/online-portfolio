@@ -19,7 +19,7 @@ class Body extends Component {
         <h1 className="gold-text">Projects</h1>
         <div className="row">
           {projects.map((project) => (
-            <Card project={project} />
+            <Card key={project.id} project={project} />
           ))}
         </div>
       </main>
