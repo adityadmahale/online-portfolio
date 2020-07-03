@@ -63,6 +63,10 @@ code {
   text-align: center;
 }
 
+.gold {
+  background-color: #99977d !important;
+}
+
 @media screen and (min-width: 768px) {
   .hero-text {
     left: 35%;
