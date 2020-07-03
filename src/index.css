@@ -26,7 +26,7 @@ code {
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
-  border-radius: 0 !important;
+  border-radius: 0;
   background-image: linear-gradient(
       to right,
       rgba(0, 0, 0, 0.9),
@@ -63,8 +63,20 @@ code {
   text-align: center;
 }
 
+.card {
+  height: 100%;
+}
+
 .gold {
-  background-color: #99977d !important;
+  background-color: #7d7b64;
+}
+
+.gold-text {
+  color: #7d7b64;
+}
+
+a.gold-text:hover {
+  color: #5e5d4d;
 }
 
 @media screen and (min-width: 768px) {
