@@ -22,6 +22,8 @@ class Body extends Component {
             <Card key={project.id} project={project} />
           ))}
         </div>
+        <hr style={{ borderColor: "1px solid #7d7b64" }} />
+        <h1 className="gold-text">Skills</h1>
       </main>
     );
   }
