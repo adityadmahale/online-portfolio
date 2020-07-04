@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import { NavLink } from "react-router-dom";
 
 class NavBar extends Component {
   links = ["About", "Projects", "Skills", "Contact"];
@@ -44,13 +43,13 @@ class NavBar extends Component {
           <ul className="navbar-nav mr-auto">
             {this.links.map((link) => {
               return (
-                <NavLink
+                <a
                   key={link}
                   className="nav-item nav-link text-light px-4 py-3"
-                  to="#"
+                  href="#"
                 >
                   {link}
-                </NavLink>
+                </a>
               );
             })}
           </ul>
