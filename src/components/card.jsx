@@ -1,7 +1,7 @@
 import React from "react";
 
-const Card = (props) => {
-  const { image, title, link } = props.project;
+const Card = ({ project, onSelect }) => {
+  const { image, title, link } = project;
   return (
     <div className="col-12 col-md-6 col-lg-4 mb-4">
       <div
@@ -14,9 +14,15 @@ const Card = (props) => {
 
           <div className="row">
             <div className="col">
-              <a href="#" className="btn gold text-light">
+              <button
+                type="button"
+                className="btn gold text-light"
+                onClick={() => onSelect(project)}
+                data-toggle="modal"
+                data-target="#myModal"
+              >
                 Show info
-              </a>
+              </button>
             </div>
             <div className="col justify-content-center align-self-center">
               {link && (
