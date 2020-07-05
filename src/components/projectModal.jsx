@@ -13,7 +13,12 @@ const ProjectModal = ({ project }) => {
             </button>
           </div>
           <div className="modal-body gold-text">
-            <p className="text-justify">{description}</p>
+            {description &&
+              description.map((desc) => (
+                <p key={desc.id} className="text-justify">
+                  {desc.point}
+                </p>
+              ))}
             <h5>Skills</h5>
             {skills &&
               skills.map((skill) => (
