@@ -1,17 +1,20 @@
 import React, { Component } from "react";
-import Card from "./card";
-import ProjectModal from "./projectModal";
+import Projects from "./projects";
+import Experience from "./experience";
 import { getProjects } from "../services/projectService";
+import { getExperience } from "../services/experienceService";
 
 class Body extends Component {
   state = {
     projects: [],
+    experience: [],
     selectedProject: {},
   };
 
   componentDidMount() {
     const projects = getProjects();
-    this.setState({ projects });
+    const experience = getExperience();
+    this.setState({ projects, experience });
   }
 
   handleSelect = (project) => {
@@ -19,23 +22,24 @@ class Body extends Component {
     this.setState({ selectedProject });
   };
 
+  renderHorizontalRule = () => {
+    return <hr style={{ borderColor: "1px solid #7d7b64" }} />;
+  };
+
   render() {
-    const { projects } = this.state;
+    const { projects, selectedProject, experience } = this.state;
     return (
       <main className="container">
-        <h1 className="gold-text">Projects</h1>
-        <div className="row">
-          <ProjectModal project={this.state.selectedProject} />
-          {projects.map((project) => (
-            <Card
-              key={project.id}
-              project={project}
-              onSelect={this.handleSelect}
-            />
-          ))}
-        </div>
-        <hr style={{ borderColor: "1px solid #7d7b64" }} />
-        <h1 className="gold-text">Skills</h1>
+        <Experience
+          experience={experience}
+          renderHorizontalRule={this.renderHorizontalRule}
+        />
+        <Projects
+          projects={projects}
+          selectedProject={selectedProject}
+          onSelect={this.handleSelect}
+          renderHorizontalRule={this.renderHorizontalRule}
+        />
       </main>
     );
   }

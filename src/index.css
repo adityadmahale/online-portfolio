@@ -100,6 +100,18 @@ a.gold-text:hover {
   animation-timing-function: ease-in;
 }
 
+.border-block-left {
+  border-left: 8px solid #7d7b64;
+}
+
+.duration {
+  text-align: left;
+}
+
+.silver-text {
+  color: #6e6d6d;
+}
+
 @media screen and (min-width: 768px) {
   .hero-text {
     left: 35%;
@@ -113,5 +125,9 @@ a.gold-text:hover {
 
   .silver {
     background-color: #6e6d6d;
+  }
+
+  .duration {
+    text-align: right;
   }
 }

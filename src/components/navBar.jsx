@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 
 class NavBar extends Component {
-  links = ["About", "Projects", "Skills", "Contact"];
+  links = ["About", "Experience", "Projects", "Skills", "Contact"];
 
   state = {
     scrollTop: 0,
