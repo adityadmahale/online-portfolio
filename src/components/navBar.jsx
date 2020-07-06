@@ -4,12 +4,16 @@ import { Link } from "react-scroll";
 class NavBar extends Component {
   links = ["About", "Experience", "Projects", "Skills", "Contact"];
 
+  collapseRef = React.createRef();
+
   state = {
     scrollTop: 0,
+    screenWidth: 0,
   };
 
   componentDidMount = () => {
     window.addEventListener("scroll", this.handleScroll);
+    this.setState({ screenWidth: window.innerWidth });
   };
 
   componentWillUnmount = () => {
@@ -26,10 +30,15 @@ class NavBar extends Component {
     return this.state.scrollTop > 100 ? classes + " silver" : classes;
   };
 
+  handleCollapse = () => {
+    if (this.state.screenWidth < 768) this.collapseRef.current.click();
+  };
+
   render() {
     return (
       <nav className={this.changeBackground()}>
         <button
+          ref={this.collapseRef}
           className="navbar-toggler"
           type="button"
           data-toggle="collapse"
@@ -52,6 +61,7 @@ class NavBar extends Component {
                   smooth={true}
                   offset={-80}
                   duration={500}
+                  onClick={this.handleCollapse}
                 >
                   {link}
                 </Link>
