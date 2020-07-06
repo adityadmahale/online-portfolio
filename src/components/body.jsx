@@ -1,8 +1,10 @@
 import React, { Component } from "react";
-import Projects from "./projects";
-import Experience from "./experience";
 import About from "./about";
+import Experience from "./experience";
+import Education from "./education";
+import Projects from "./projects";
 import Skills from "./skills";
+import Contact from "./contact";
 import { getProjects } from "../services/projectService";
 import { getExperience } from "../services/experienceService";
 import { getSkills } from "../services/skillsService";
@@ -42,6 +44,7 @@ class Body extends Component {
           experience={experience}
           renderHorizontalRule={this.renderHorizontalRule}
         />
+        <Education renderHorizontalRule={this.renderHorizontalRule} />
         <Projects
           projects={projects}
           selectedProject={selectedProject}
@@ -52,6 +55,7 @@ class Body extends Component {
           skills={skills}
           renderHorizontalRule={this.renderHorizontalRule}
         />
+        <Contact />
       </main>
     );
   }

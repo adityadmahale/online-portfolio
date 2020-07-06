@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import { Link } from "react-scroll";
 
 class NavBar extends Component {
-  links = ["About", "Experience", "Projects", "Skills", "Contact"];
+  links = ["About", "Experience", "Education", "Projects", "Skills", "Contact"];
 
   collapseRef = React.createRef();
 
