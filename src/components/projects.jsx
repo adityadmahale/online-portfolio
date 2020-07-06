@@ -10,7 +10,9 @@ const Projects = ({
 }) => {
   return (
     <React.Fragment>
-      <h1 className="gold-text">Projects</h1>
+      <h1 id="#Projects" className="gold-text">
+        Projects
+      </h1>
       <div className="row">
         <ProjectModal project={selectedProject} />
         {projects.map((project) => (

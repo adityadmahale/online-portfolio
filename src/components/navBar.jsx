@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { Link } from "react-scroll";
 
 class NavBar extends Component {
   links = ["About", "Experience", "Projects", "Skills", "Contact"];
@@ -43,13 +44,17 @@ class NavBar extends Component {
           <ul className="navbar-nav mr-auto">
             {this.links.map((link) => {
               return (
-                <a
+                <Link
                   key={link}
+                  style={{ cursor: "pointer" }}
                   className="nav-item nav-link text-light px-4 py-3"
-                  href="#"
+                  to={`#${link}`}
+                  smooth={true}
+                  offset={-80}
+                  duration={500}
                 >
                   {link}
-                </a>
+                </Link>
               );
             })}
           </ul>

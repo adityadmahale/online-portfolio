@@ -3,7 +3,9 @@ import React from "react";
 const Experience = ({ experience, renderHorizontalRule }) => {
   return (
     <React.Fragment>
-      <h1 className="gold-text">Experience</h1>
+      <h1 id="#Experience" className="gold-text">
+        Experience
+      </h1>
       <div className="row">
         {experience.map((exp) => {
           return (
