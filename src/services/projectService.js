@@ -12,6 +12,14 @@ const projects = [
       },
     ],
     skills: ["Web Design", "HTML", "CSS", "JavaScript"],
+    associatedCertificates: [
+      {
+        id: 1,
+        label:
+          "Web Design for Everybody: Basics of Web Development & Coding Specialization",
+        link: "https://coursera.org/share/36f332f2786f6f676d058b8904a26268",
+      },
+    ],
   },
   {
     id: 2,
@@ -37,6 +45,13 @@ const projects = [
       "Ipython",
       "Predictive Modelling",
       "SQL",
+    ],
+    associatedCertificates: [
+      {
+        id: 1,
+        label: "IBM Data Science Professional Certificate",
+        link: "https://coursera.org/share/1cdc9ecd9a67d5d780abb86aac5b7850",
+      },
     ],
   },
   {
