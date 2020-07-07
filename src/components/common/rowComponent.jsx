@@ -9,14 +9,21 @@ const RowComponent = ({ rows }) => {
             <div className="col-12 col-md-9">
               <h4 className="silver-text">{data.title}</h4>
               <h6>{data.subtitle}</h6>
-              <ul>
-                {data.description &&
-                  data.description.map((point) => (
+              {data.description && data.description.length > 1 ? (
+                <ul>
+                  {data.description.map((point) => (
                     <li className="text-justify" key={point.id}>
                       {point.description}
                     </li>
                   ))}
-              </ul>
+                </ul>
+              ) : (
+                data.description.map((point) => (
+                  <p className="text-justify" key={point.id}>
+                    {point.description}
+                  </p>
+                ))
+              )}
             </div>
             <div className="col-12 col-md-3 duration silver-text">
               {data.duration}
