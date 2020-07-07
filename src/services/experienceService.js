@@ -1,8 +1,8 @@
 const experience = [
   {
     id: 1,
-    designation: "Software Engineer",
-    company: "EnterpriseDB",
+    title: "Software Engineer",
+    subtitle: "EnterpriseDB",
     description: [
       {
         id: 1,
@@ -43,8 +43,8 @@ const experience = [
   },
   {
     id: 2,
-    designation: "Software Engineering Analyst",
-    company: "Accenture",
+    title: "Software Engineering Analyst",
+    subtitle: "Accenture",
     description: [
       {
         id: 1,
@@ -75,8 +75,8 @@ const experience = [
   },
   {
     id: 3,
-    designation: "Associate Software Engineer",
-    company: "Accenture",
+    title: "Associate Software Engineer",
+    subtitle: "Accenture",
     description: [
       {
         id: 1,
