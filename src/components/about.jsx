@@ -6,7 +6,7 @@ const About = ({ renderHorizontalRule }) => {
       <h1 id="#About" className="gold-text">
         About
       </h1>
-      <p className="gold-text">
+      <p className="gold-text text-justify">
         A passionate Software Engineer with extensive experience in IT
         Automation. Proficient in programming languages such as Python,
         JavaScript, and Java. Well acquainted with PostgreSQL database, Cloud

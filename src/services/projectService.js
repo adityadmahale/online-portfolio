@@ -76,7 +76,7 @@ const projects = [
         point: "- Programmed using Embedded C.",
       },
     ],
-    skills: [],
+    skills: ["Embedded C", "MATLAB", "LabVIEW"],
   },
   {
     id: 4,
@@ -103,7 +103,7 @@ const projects = [
         point: "- MATLAB was used to design the software.",
       },
     ],
-    skills: [],
+    skills: ["MATLAB", "Digital Image Processing"],
   },
 ];
 

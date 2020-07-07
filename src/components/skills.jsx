@@ -10,7 +10,7 @@ const About = ({ renderHorizontalRule, skills }) => {
       <div className="row">
         {skills.map((skill) => {
           return (
-            <div key={skill.id} className="col-12 col-md-3">
+            <div key={skill.id} className="col-12 col-md-4 col-lg-3 mb-4">
               <div
                 className="card"
                 style={{

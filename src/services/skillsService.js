@@ -31,7 +31,7 @@ const skills = [
       "React Native",
       "Responsive Web Design",
     ],
-    profiency: 80,
+    profiency: 85,
   },
   {
     id: 3,

@@ -24,7 +24,7 @@ code {
 
 .jumbotron {
   height: 90%;
-  background-position: center;
+  background-position: left;
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
@@ -107,6 +107,9 @@ a.gold-text:hover {
 }
 
 @media screen and (min-width: 768px) {
+  .jumbotron {
+    background-position: center;
+  }
   .hero-text {
     left: 35%;
     text-align: left;
