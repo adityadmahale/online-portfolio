@@ -15,25 +15,24 @@ class ProjectModal extends Component {
   renderCertificates = (associatedCertificates) => {
     return (
       associatedCertificates && (
-        <React.Fragment>
+        <div className="mb-3">
           {associatedCertificates.length > 1 ? (
             <h5 className="silver-text">Associated Certificates:</h5>
           ) : (
             <h5 className="silver-text">Associated Certificate:</h5>
           )}
           {associatedCertificates.map((cert) => (
-            <p key={cert.id}>
-              <a
-                href={cert.link}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="gold-text"
-              >
-                {cert.label} <i className="fa fa-external-link"></i>
-              </a>
-            </p>
+            <a
+              key={cert.id}
+              href={cert.link}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="gold-text"
+            >
+              {cert.label} <i className="fa fa-external-link"></i>
+            </a>
           ))}
-        </React.Fragment>
+        </div>
       )
     );
   };
