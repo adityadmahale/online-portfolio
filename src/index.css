@@ -29,12 +29,6 @@ code {
   background-size: cover;
   position: relative;
   border-radius: 0;
-  background-image: linear-gradient(
-      to right,
-      rgba(0, 0, 0, 0.9),
-      rgba(181, 166, 127, 0.3)
-    ),
-    url("/profile.jpg");
 }
 
 .hero-text {

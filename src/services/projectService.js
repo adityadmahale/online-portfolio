@@ -1,8 +1,10 @@
+const basePath = process.env.PUBLIC_URL;
+
 const projects = [
   {
     id: 1,
     title: "Web Design for Everbody Capstone: Hiking portfolio",
-    image: "/hiking_portfolio.jpg",
+    image: basePath + "/hiking_portfolio.jpg",
     link: "http://adwde.byethost22.com/wdecapstone/capstone.html",
     description: [
       {
@@ -24,7 +26,7 @@ const projects = [
   {
     id: 2,
     title: "IBM Data Science Capstone Project",
-    image: "/data_science.jpg",
+    image: basePath + "/data_science.jpg",
     link:
       "https://adityacourse.blogspot.com/2019/11/ibm-data-science-capstone-project.html",
     description: [
@@ -57,7 +59,7 @@ const projects = [
   {
     id: 3,
     title: "Audio Equalizer",
-    image: "/final_year.jpg",
+    image: basePath + "/final_year.jpg",
     description: [
       {
         id: 1,
@@ -79,7 +81,7 @@ const projects = [
   {
     id: 4,
     title: "Eye Gaze Tracking System",
-    image: "/third_year.jpg",
+    image: basePath + "/third_year.jpg",
     description: [
       {
         id: 1,
