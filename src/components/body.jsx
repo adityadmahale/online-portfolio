@@ -8,11 +8,13 @@ import Contact from "./contact";
 import { getProjects } from "../services/projectService";
 import { getExperience } from "../services/experienceService";
 import { getSkills } from "../services/skillsService";
+import { getEducation } from "../services/educationService";
 
 class Body extends Component {
   state = {
-    projects: [],
     experience: [],
+    education: [],
+    projects: [],
     skills: [],
     selectedProject: {},
   };
@@ -21,7 +23,8 @@ class Body extends Component {
     const projects = getProjects();
     const experience = getExperience();
     const skills = getSkills();
-    this.setState({ projects, experience, skills });
+    const education = getEducation();
+    this.setState({ projects, experience, education, skills });
   }
 
   handleSelect = (project) => {
@@ -36,7 +39,13 @@ class Body extends Component {
   };
 
   render() {
-    const { projects, selectedProject, experience, skills } = this.state;
+    const {
+      projects,
+      selectedProject,
+      experience,
+      education,
+      skills,
+    } = this.state;
     return (
       <main className="container">
         <About renderHorizontalRule={this.renderHorizontalRule} />
@@ -44,7 +53,10 @@ class Body extends Component {
           experience={experience}
           renderHorizontalRule={this.renderHorizontalRule}
         />
-        <Education renderHorizontalRule={this.renderHorizontalRule} />
+        <Education
+          education={education}
+          renderHorizontalRule={this.renderHorizontalRule}
+        />
         <Projects
           projects={projects}
           selectedProject={selectedProject}
