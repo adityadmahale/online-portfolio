@@ -3,6 +3,31 @@ const basePath = process.env.PUBLIC_URL;
 const projects = [
   {
     id: 1,
+    title: "Front-End Web Development with React: Honors Assignment",
+    image: basePath + "/online_portfolio.jpg",
+    description: [
+      {
+        id: 1,
+        point:
+          "The project is created as a part of the honors assignment of the course 'Front-End Web Development with React' on the Coursera platform. This project is a single-page responsive online portfolio developed using React.js and Bootstrap.",
+      },
+    ],
+    skills: ["React", "Redux", "JSX", "Bootstrap"],
+    associatedCertificates: [
+      {
+        id: 1,
+        label: "Front-End Web Development with React",
+        link: "https://coursera.org/share/bbca02ecff49611b62041b0dd9808a9a",
+      },
+      {
+        id: 2,
+        label: "Front-End Web UI Frameworks and Tools: Bootstrap 4",
+        link: "https://coursera.org/share/625dc4bf6479220f6f3aacef6943dc0f",
+      },
+    ],
+  },
+  {
+    id: 2,
     title: "Web Design for Everbody Capstone: Hiking portfolio",
     image: basePath + "/hiking_portfolio.jpg",
     link: "http://adwde.byethost22.com/wdecapstone/capstone.html",
@@ -49,7 +74,7 @@ const projects = [
     ],
   },
   {
-    id: 2,
+    id: 3,
     title: "IBM Data Science Capstone Project",
     image: basePath + "/data_science.jpg",
     link:
@@ -127,7 +152,7 @@ const projects = [
     ],
   },
   {
-    id: 3,
+    id: 4,
     title: "Audio Equalizer",
     image: basePath + "/final_year.jpg",
     description: [
@@ -149,7 +174,7 @@ const projects = [
     skills: ["Embedded C", "MATLAB", "LabVIEW"],
   },
   {
-    id: 4,
+    id: 5,
     title: "Eye Gaze Tracking System",
     image: basePath + "/third_year.jpg",
     description: [
