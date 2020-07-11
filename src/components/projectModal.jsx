@@ -27,7 +27,7 @@ class ProjectModal extends Component {
               href={cert.link}
               target="_blank"
               rel="noopener noreferrer"
-              className="gold-text"
+              className="gold-text d-block mb-1"
             >
               {cert.label} <i className="fa fa-external-link"></i>
             </a>
@@ -39,15 +39,15 @@ class ProjectModal extends Component {
 
   renderSkills = (skills) => {
     return (
-      <React.Fragment>
-        <h5 className="silver-text">Skills:</h5>
+      <div className="mb-3">
+        <h5 className="silver-text">Skills, Tools or Software:</h5>
         {skills &&
           skills.map((skill) => (
             <span key={skill} className="badge badge-pill gold text-light ml-1">
               {skill}
             </span>
           ))}
-      </React.Fragment>
+      </div>
     );
   };
 
@@ -71,8 +71,8 @@ class ProjectModal extends Component {
             </div>
             <div className="modal-body gold-text">
               {this.renderDescription(description)}
-              {this.renderCertificates(associatedCertificates)}
               {this.renderSkills(skills)}
+              {this.renderCertificates(associatedCertificates)}
             </div>
           </div>
         </div>

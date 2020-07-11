@@ -7,7 +7,7 @@ const Contact = () => {
         Contact
       </h1>
       <div
-        class="LI-profile-badge"
+        className="LI-profile-badge"
         data-version="v1"
         data-size="medium"
         data-locale="en_US"
@@ -16,7 +16,7 @@ const Contact = () => {
         data-vanity="aditya-mahale"
       >
         <a
-          class="LI-simple-link"
+          className="LI-simple-link"
           href="https://in.linkedin.com/in/aditya-mahale?trk=profile-badge"
         >
           Aditya Mahale
