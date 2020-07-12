@@ -7,13 +7,11 @@ const About = ({ renderHorizontalRule }) => {
         About
       </h1>
       <p className="gold-text text-justify">
-        A passionate Software Engineer with extensive experience in IT
-        Automation. Proficient in programming languages such as Python,
-        JavaScript, and Java. Well acquainted with PostgreSQL database, Cloud
-        Computing, and Container technologies. Known for creating and
-        implementing efficient automation frameworks. Possess strong verbal and
-        written communication skills and have exposure to client communications
-        as part of project management.
+        A passionate Software Engineer with a background working effectively in
+        dynamic environments. Fluent in programming languages such as Python,
+        JavaScript, and Java. Proven history of developing useful and efficient
+        automation frameworks. Quickly learn and master new technologies and
+        working in both team and self-directed settings.
       </p>
       {renderHorizontalRule()}
     </React.Fragment>
