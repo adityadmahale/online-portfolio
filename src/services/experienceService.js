@@ -7,21 +7,22 @@ const experience = [
       {
         id: 1,
         description:
-          "Develop automation suite utilising Python programming language and Docker containers.",
+          "Develop automated testing programs using Python and Docker that address areas such as database impacts, software scenarios, regression testing, negative testing, error or bug retests, or usability.",
       },
       {
         id: 2,
         description:
-          "Write clean and scalable automation code using Pytest framework.",
+          "Update automated test scripts(Pytest Framework) to ensure currency.",
       },
       {
         id: 3,
         description:
-          "Use different cloud platforms such as AWS, Azure and OpenStack.",
+          "Install and configure recreations of software production environments on different cloud platforms such as AWS, Azure, and OpenStack to allow testing of software.",
       },
       {
         id: 4,
-        description: "Write SQL queries using knowledge of PostgreSQL.",
+        description:
+          "Collaborate with developers and testers to evaluate or diagnose problems and recommend possible solutions.",
       },
       {
         id: 5,
@@ -32,11 +33,6 @@ const experience = [
         id: 6,
         description:
           "Simplified code implementation by applying knowledge of design patterns.",
-      },
-      {
-        id: 7,
-        description:
-          "Optimized Dockerfile instructions to efficiently build a Docker image.",
       },
     ],
     duration: "Mar 2018 – Present",
