@@ -3,6 +3,35 @@ const basePath = process.env.PUBLIC_URL;
 const projects = [
   {
     id: 1,
+    title: "Plant Adoption Website (Full-Stack Web Development)",
+    link: "https://adoptplants.herokuapp.com/home",
+    image: basePath + "/adopt.jpg",
+    description: [
+      {
+        id: 1,
+        point:
+          "Taking inspiration from a podcast, I have created a website for the adoption of indoor plants. I have developed the website using React.js and Bootstrap for the front-end and Node.js/Express.js and MongoDB for the back-end.",
+      },
+    ],
+    skills: [
+      "React",
+      "Redux",
+      "JSX",
+      "Bootstrap",
+      "Node.js",
+      "Express",
+      "MongoDB",
+    ],
+    associatedCertificates: [
+      {
+        id: 1,
+        label: "Full-Stack Web Development with React",
+        link: "https://coursera.org/share/e69a795b02286b518df1342d4ec9fd24",
+      },
+    ],
+  },
+  {
+    id: 2,
     title: "Front-End Web Development with React: Honors Assignment",
     image: basePath + "/online_portfolio.jpg",
     description: [
@@ -27,7 +56,7 @@ const projects = [
     ],
   },
   {
-    id: 2,
+    id: 3,
     title: "Web Design for Everbody Capstone: Hiking portfolio",
     image: basePath + "/hiking_portfolio.jpg",
     link: "http://adwde.byethost22.com/wdecapstone/capstone.html",
@@ -74,8 +103,8 @@ const projects = [
     ],
   },
   {
-    id: 3,
-    title: "IBM Data Science Capstone Project",
+    id: 4,
+    title: "IBM Data Science Project",
     image: basePath + "/data_science.jpg",
     link:
       "https://adityacourse.blogspot.com/2019/11/ibm-data-science-capstone-project.html",
@@ -152,7 +181,7 @@ const projects = [
     ],
   },
   {
-    id: 4,
+    id: 5,
     title: "Audio Equalizer",
     image: basePath + "/final_year.jpg",
     description: [
@@ -174,7 +203,7 @@ const projects = [
     skills: ["Embedded C", "MATLAB", "LabVIEW"],
   },
   {
-    id: 5,
+    id: 6,
     title: "Eye Gaze Tracking System",
     image: basePath + "/third_year.jpg",
     description: [
