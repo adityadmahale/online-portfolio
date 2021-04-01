@@ -11,7 +11,7 @@ const HeroImage = () => {
     >
       <div className="hero-text">
         <h1 style={{ fontSize: "5rem" }}>Aditya Mahale</h1>
-        <p>Software Engineer</p>
+        <p>Senior Software Engineer</p>
         <i className="fa fa-chevron-down mt-2" aria-hidden="true"></i>
       </div>
     </div>
