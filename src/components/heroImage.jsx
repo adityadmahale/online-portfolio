@@ -10,7 +10,7 @@ const HeroImage = () => {
       }}
     >
       <div className="hero-text">
-        <h1 style={{ fontSize: "5rem" }}>Aditya Mahale</h1>
+        <h1>Aditya Mahale</h1>
         <p>Senior Software Engineer</p>
         <i className="fa fa-chevron-down mt-2" aria-hidden="true"></i>
       </div>

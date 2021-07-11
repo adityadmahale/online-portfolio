@@ -1,7 +1,7 @@
 const experience = [
   {
     id: 1,
-    title: "Software Engineer",
+    title: "Senior Software Engineer",
     subtitle: "EnterpriseDB",
     description: [
       {
