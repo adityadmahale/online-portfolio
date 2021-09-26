@@ -11,8 +11,9 @@ const skills = [
       "Java",
       "PostgreSQL",
       "Bash",
-      "Robot Framework",
-      "Selenium WebDriver",
+      "Ansible",
+      "Kubernetes",
+      "Github Actions"
     ],
     profiency: 100,
   },
@@ -31,13 +32,13 @@ const skills = [
       "React Native",
       "Responsive Web Design",
     ],
-    profiency: 85,
+    profiency: 90,
   },
   {
     id: 3,
     domain: "Cloud Computing",
     names: ["AWS", "Azure", "OpenStack", "GCP", "Heroku"],
-    profiency: 70,
+    profiency: 85,
   },
   {
     id: 4,

@@ -7,7 +7,7 @@ const About = ({ renderHorizontalRule }) => {
         About
       </h1>
       <p className="gold-text text-justify">
-        A passionate Software Engineer with a background working effectively in
+        I am a Senior Software Engineer with a background working effectively in
         dynamic environments. Fluent in programming languages such as Python,
         JavaScript, and Java. Proven history of developing useful and efficient
         automation frameworks. Quickly learn and master new technologies and
