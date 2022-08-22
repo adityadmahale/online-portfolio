@@ -1,24 +1,6 @@
 const skills = [
   {
     id: 1,
-    domain: "IT Automation",
-    names: [
-      "Python",
-      "Pytest",
-      "Docker",
-      "Git",
-      "Linux",
-      "Java",
-      "PostgreSQL",
-      "Bash",
-      "Ansible",
-      "Kubernetes",
-      "Github Actions",
-    ],
-    profiency: 100,
-  },
-  {
-    id: 2,
     domain: "Web and App Development",
     names: [
       "HTML",
@@ -38,9 +20,27 @@ const skills = [
     profiency: 100,
   },
   {
-    id: 3,
+    id: 2,
     domain: "Cloud Computing",
     names: ["AWS", "Azure", "OpenStack", "GCP", "Heroku"],
+    profiency: 100,
+  },
+  {
+    id: 3,
+    domain: "IT Automation",
+    names: [
+      "Python",
+      "Pytest",
+      "Docker",
+      "Git",
+      "Linux",
+      "Java",
+      "PostgreSQL",
+      "Bash",
+      "Ansible",
+      "Kubernetes",
+      "Github Actions",
+    ],
     profiency: 100,
   },
   {
